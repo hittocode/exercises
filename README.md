@@ -1,0 +1,2 @@
+# exercises
+personal webdev exercises
