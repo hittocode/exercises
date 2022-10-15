@@ -1,0 +1,60 @@
+--------Images: it's more than the tag------------ 1:33
+
+-many file types are widely supported: jpeg (jpg and jpeg), gif, and png
+- svg and bmp are additional options
+- file extensions must be included
+
+- every image must be downloaded, so size can be a factor
+- every image requires an http request
+
+--------image sizes------------
+- when you link to an image the browser displays the image as big (or small) as the file
+- "quick" solutions - change file, use width/height attributes
+
+-------using an editor--------
+-editors can be used to permanently change the size of the image, only works on local files
+
+- built-in software for this includes preview(mac) and paint(windows)
+
+--------using attributes--------
+-always strive to keep style out of your html files...but
+-<img> tag includes width and height attributes
+
+
+------default image size-------
+
+<figure>
+	<img src="imgs/ashtabula.jpg" width="500px" height="100px" alt="My house">  (can also use % instead of px, percentage is on window size)
+	<figcaption>Default image size</figcaption>
+</figure>
+
+
+-----favicon-----
+- you can put image/logo/icon next to the title of your page (in the tab)
+-must go in <head> section
+<link rel="icon" type="image/png" href="imgs/wd4elogo.png" />
+
+
+---------Alt text attribute-------------
+-provides a textual alternative to non-text content
+-read by screen readers
+-displayed in place of images
+-provides semantic meaning for search engines
+
+-----------creating good alt text-----------
+-be accurate
+-be succinct
+-don't be redundant
+-don't include "picture of..." or "graphic of..."
+
+------------empty alt text-------------
+-it's ok to leave alt text empty (null). decorative images used for non-informative purpose
+- do not skip it though
+
+
+------------review----------
+-misuse of file extensions, filename, and the file paths are often a problem
+- for now, style the height/width in the html code
+
+
+1:35
