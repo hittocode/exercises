@@ -1,0 +1,63 @@
+DOM (document object model)
+
+
+----tags-----
+headings (block)
+<h1><h2><h3><h4><h5><h6> : These tags have syntax and semantics
+
+paragrabs (block)
+<p></p>, should only contain inline elements
+
+divs (block)
+<div></div> : generic section that is larger than a paragraph
+
+ordered list
+<ol>
+  <li></li>
+  <li></li>
+</ol>
+
+unordered lists
+<ul>
+  <li></li>
+  <li></li>
+</ul>
+
+line breaks
+<br>
+
+----attributes----
+- attributes provide additional information about an element
+- always specified in the start tag
+- attributes come in name/value pairs
+
+----images----
+
+- images (inline)
+  <img src="mypicture.jpg" alt="a picture that is mine"/>
+-images rarely work the first time
+  show a broken link, too big, too small, etc...
+-save yourself heartache and size/carefully name your picture before you use it
+
+---more attributes----
+as you learn the tags, you learn their specific attributes. some apply to any tag
+- class: applies special properties to groups of elements
+- id: specifies an unique id to one element on the page
+- style: specifies a certain visual style (avoid this one)
+- acceskey: a shortcut key to activate an element
+- tabindex: the order elements will come into focus using the tab key
+
+----special entities----
+- tags always start with a bracket (<)
+- what if you want the browser to display a bracket, not start a tag?
+
+< = &lt;
+> = &gt;
+(c) = &copy;
+blank space = &cent;
+cent = &cent;
+& = &amp;
+
+------------------review----------------------
+- how do you know the difference between a tag and an attribute?
+- what two symbols end a self-closing tag?

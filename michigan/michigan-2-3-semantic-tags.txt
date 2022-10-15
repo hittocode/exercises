@@ -1,0 +1,65 @@
+------how to design------
+
+-----Using semantic tags-----
+- in the beginning there was div
+- <div> was a way to group related content together
+- divs almost always had special classes/ids associated with them
+	<div class="header">...</div>
+	<div class="section">...</div>
+	<div class="footer">...</div>
+
+----<header>----
+-a group of introductory or navigational aids: title, navigation links, etc...
+
+<header>
+	<h1>this is the title</h1>
+	<h2>the author is colleen</h2>
+</header>
+
+- not to be confused with <head> or the different headings (head is for metadata)
+
+----<nav>----
+- a section of the page that links to other pages or to parts within a page
+
+<nav>
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#history">History</a></li>
+    <li><a href="#development">Development</a></li>
+  </ul>
+</nav>
+
+- often found in the <header> tag 
+
+-----<footer>-----
+
+- a section that contains info such as copyright data, related documents, and links to social media
+
+<footer>
+  &copy; 2015 by Carlitos<br>
+  <a href="http://www.carlitos.com/html5">Introduction to HTML5</a>
+</footer>
+
+-----<figure>-----
+
+- more semantics than <img>. can include: caption, multiple multi-media resources, etc...
+
+<figure>
+  <img src="sunset.gif" alt="Ashtabula sunset">
+  <figcaption>A sunset over Lake Erie. Taken in Ashtabula Ohio</figcaption>
+</figure>
+
+
+
+----- Other new tags------
+
+-structural elements: article, aside, main, menuitem, summary, section
+- form elements: datalist, keygen, output
+- input types: color, date, email, list
+- graphics elements: canvas, svg
+- media elements: audio, embed, source, track, video
+
+
+-----------------review------------------
+- the age of <div> is ending
+- semantic tags help guide users to information on your page
