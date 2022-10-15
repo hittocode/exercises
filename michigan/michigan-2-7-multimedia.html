@@ -1,0 +1,47 @@
+------------multimedia------------  1:53
+
+-------objectives-------
+-describe html5 audio and video elements
+-explain the purpose of plugins
+-reflect on accessibility issues
+
+
+------html5 multimedia-----------
+-designed to avoid the use of extra software to play music/video
+-not fully implemented
+
+--------video element <video>------
+-video tag uses a src attribute or embedded <source>
+-common attributes: height, width / autoplay / loop / controls
+-text inside <video>..</video> is displayed if browser can not support tag
+
+------audio element <audio>--------
+-audio tag uses a src attribute to link to audio file, typically .mp3 or .wav
+- common attributes: autoplay, controls, loop / buffered / muted / volume
+
+------setting clips---------
+-you can set both the video and audio elements to play clips at specific times by adding to the src attribute
+-example:  .ext#t=5, 25 / .ext#t=, 39 / .ext#t=, 1:38:45 / .ext#t=42
+
+<h1>Video</h1>
+<video src="BoxCar.MOV" width="400" controls loop volume>
+		Your browser does not support the <code>video</code>element.
+	</video>
+
+<h1>Audio</h1>
+	<audio src="https://upload.wikimedia.org/wikipedia/commons/0/04/Pyotr_Ilyich_Thaikovsky_-_1812_overture.ogg" controls>
+		Pyotr Ilyich Thaikovsky - 1812 Overture
+	</audio>
+	<br>
+
+-------plugins--------
+-before html5 there was no standard for video display, plugins were required
+-since not all browsers support new tag some may require flash (lol)
+
+------accessibility issues------
+-make sure to provide links to plugins
+-include text descriptions and closed captioning (or other equivalent content)
+- multimedia should enhance your content, not be a distraction
+
+
+

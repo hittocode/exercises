@@ -1,0 +1,52 @@
+-----Links-----
+-links are what make a web a web
+-the interlinked nature of the web leads to the "knowledge" that search engines appear to have.
+
+-----anchor links------
+<a href="www.google.com">Google</a>
+
+-the <a> tag stands for anchor link
+-needs a hyper-reference and content, href:reference to location of new content / content: the clickable part (text or image)
+
+-----types of links------
+-absolute: <a href="http://www.intro-webdesign.com/">Web Design</a> (opening tag / where to go on link / clickable text / closing tag) 
+-relative: <a href="page.2.html">Second Page</a> <a href="#history">History Section</a>(link to local file in the same folder/different folder/id tag) (use relative when it's internal)
+-internal
+-graphical
+
+-----absolute vs relative-----
+- use absolute when you're linking to an outside webpage
+- use relative when it's internal
+- your links should never have folders that are specific to your computer, keep it to the same dir
+
+-----using images as the link-----
+-the clickable component doesn't have to be text
+example:
+<a href="http://www.redcross.org"><img src="imgs/redcross-logo.png" alt="Red Cross Logo"/></a>
+<a href="http://www.redcross.org"><img src="http://www.redcross.org/images/redcross-logo.png" alt="Red Cross Logo"/></a>
+
+-----usability issues------
+-make sure the clickable component has an informative name
+-information in the images should be available to those who can't see the image
+
+------hyperlinks------
+-absolute references: external links that connect you to other domains
+-relative references: internal links that connect to pages in other domains, sometimes used in navbars
+-images as links: looks nice, can link to a website or to a bigger resolution of the same picture
+-embedded links: every tag can have an id attribute that gives name to a specific section of DOM (Document Object Model), jumps you to different areas of the same page.
+		example: <div id="relative">
+				<h2>Relative Reference</h2>
+				<p>Relative References (sometimes called internal links) connect to other pages in other domains. In the href attribute of the tag only the folder and filename is specified. Some examples of when you might use relative references would be in your navigation bar or links ot your images.</p>
+			
+
+-------targets-------
+-anchors can take a target attribute
+	- _self -default action
+	- _blank - open in a new tab or window
+	- _top and _parent
+
+
+--------review----------
+- a page without links is extremely rare
+- links can be absolute, relative and internal (#)
+- use caution when using images (accessibility)
