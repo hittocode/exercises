@@ -1,0 +1,29 @@
+---------Connecting to CPanel-------
+- You will need to have the URL for your cPanel account.
+- Usually a version of your domain name or your hosting service domain name
+
+---------File Manager----------
+- Regardless of the cPanel configuration, every system should have a File Manager
+- From the File Manager, search for the public_html (or in some cases, just public) folder
+
+---------public_html-----------
+- your site will have a lot of files, some that you want people to see, some that you don't
+- uploading files to the public_html folder should make them viewable to the public
+
+-----Wait? Why can't I view my file?---------
+- You typed in the wrong URL
+- When you uploaded the file the transfer didn't work
+- When you uploaded the file, it did not have "read access"
+
+---------Working locally-------------
+- It is possible to edit your files via cPanel but I didn't do that.
+- Changes are immediately public
+- Less opportunity to test and debug
+
+---------Review-----------
+- Versions of cPanel often differ depending on if you are using paid or free site
+- Offers many administrative tools (email accounts, database management, cron jobs)
+-- An alternative is to use sftp to transfer files
+
+
+cron jobs: The cron command-line utility is a job scheduler on Unix-like operating systems. Users who set up and maintain software environments use cron to schedule jobs, also known as cron jobs, to run periodically at fixed times, dates, or intervals.

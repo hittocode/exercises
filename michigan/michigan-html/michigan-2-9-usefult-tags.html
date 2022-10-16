@@ -1,0 +1,43 @@
+2:9:6
+-----------choosing your tags-------------
+-generic: <p> <div>
+-semantic: <header> <nav> <footer> <figure>
+
+--------block tags-----------
+-containers: <article> <aside> <section> <main>
+- <hr> (horizontal rule)
+- <address> (for accessibility)
+- <blockquote> - has cite attribute 
+- <details> with <summary> (Doesn't work with firefox yet)
+
+----------some common block tags--------
+-hr: the <hr> element used to stand for "horizontal line" and that is still how it is typically displayed by browsers. However, in HTML5 the tag took on a semantic meaning, "semantic break." I will be using it often to break up example files when I want to display multiple tags in one file.
+
+-address: the <address> element indicates that the text is an address specific to the page, perhaps contact information for the author
+	1314 Indian Autumn Trace, Houston Texas 77042
+
+-blockquote: the <blockquote> element is used for extended quotations. It should include the cite attribute in order to show or link to the source of the quote.
+		"If you cannot do great things, do small things in a great way". Napolean Hill
+
+-details: The <details> element is used in conjunction with the <summary> tag. It is one of the tags that was created in response to the repeated use of scripting to promote and close content. It is not supported by all of the browsers yet though. Creates an arrow with open content.
+
+-------inline tags--------
+- <span> was the original inline tag for plain text
+- <cite> makes it easier for people and bots to search the code for this specific information
+- <abbr> will display an abbreviation on the browser. If a title attribute is specified in the tag, the title will appear when the mouse hovers over the abbreviation. Screen readers also provide the title information.
+- <time> a semantic tag that can be used to search for specific information.
+- <code> this element tends to be displayed in a different font, but also has the semantic meaning to convey information to as many people as possible 
+- <sub> and <sup> elements used to create the super and subscripts, eg (x+y)3 or H2O. In the past, people would often paste mathematical images into the page. But images didn't convey the same meaning to all users.
+
+------tags that need "more"-------
+-<button> clicky
+-<meter> used for final scores or ratings   <meter min="0" max="100" value="50">
+-<progress> similar to the meter tag, the difference being an assumption that progression is equal to 0-100. Used to fill out forms that have progress.
+-<iframe> often used to embed documents. used to nest content, not supported by all browsers <iframe src="http://google.com"></iframe>
+-<bdo> (bidirectional override) attribute to dir (ltr or rtl) <p><bdo dir="rtl">This text will go right to left</bdo></p>
+-<map> with <area> --creates "clickable element in image" but needs JS
+
+
+-------Review-------
+-use the most specific tag possible
+- sometimes tags "don't work". Run your code through a validator, you may have a syntax error. / Run your code in multiple browsers (good idea even if your code looks good).
