@@ -1,0 +1,88 @@
+------------- Options-----------
+- Many options for styling your text
+	- font (family, style, variant, size)
+	- color and background
+	- alignment
+	- line-height
+
+-------------font-family-------------
+- font families are styles of text
+- examples: helvetica, courier, courier new, comic sans, cursive, verdana
+
+h1 {
+	font-family: Arial;
+}
+
+- not all font-families supported by all of the operating systems, so you can provide alternatives
+
+h1 {
+	font-family: Courier, Impact, Arial;
+}
+
+----------------font-family Considerations--------------
+- some fonts are not as user-friendly, use sans-serif when possible
+
+
+----------- custom fonts--------------
+- to expand beyond "web-safe" fonts use @font-face
+
+@font-face {
+	font-family: mySpecialFont;
+	src: url('Colleen.ttf');
+}
+
+h1 {
+	font-family: mySpecialFont;
+}
+
+------------font-style-------------
+-font-style: normal / italic / oblique 
+
+-------------font-variant----------
+-font-variant: normal / small-caps
+
+h1 {
+	font-variant: small-caps;
+}
+
+<h1>Small caps variation</h1>
+
+----------------font-size---------------
+- This is only the beginning of our discussion on sizes...
+- options: xx-small, x-small, small, smaller, medium, larger, x-large, xx-large, larger
+- USE PIXEL OR PERCENTAGE (percentage better for resizing reasons)
+
+-----------color and background color----------------
+- the color attribute is the color of the foreground
+- the background-color is the color of the background
+
+
+h1, span {
+	color: #000FF;		/* Blue */
+	background-color: #B3B3B3;   /* Grey */
+
+-------------text-align-------------
+- Aligning text is simple!
+- text-align: left / right / center / justify
+
+-------------line-height-------------
+- As you can guess, doesn't affect font
+- Adjusts the space between the lines of text
+
+h1 {
+	line-height: 50%;
+}
+
+h1 {
+	line-height: 200%;
+}
+
+
+-------------Review---------------
+
+- the number of options for styling text can seem overwhelming
+- practice on toy problems, create a page with some paragraphs just to test
+- Design larger projects on paper first!!!
+
+
+

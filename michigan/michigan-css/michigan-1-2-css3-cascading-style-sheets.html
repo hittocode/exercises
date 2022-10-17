@@ -1,0 +1,80 @@
+----------Browser Default Styling----------3:43
+- The same html file may look different when viewed on different browsers
+- Some tags are supported, some aren't.
+- Browsers may have different default styles
+- In general, default looks are plain
+
+----------Adding style------------
+- As styling tags were phased out of html, styling was done with style attribute
+ <h1 style="color:blue">Styled Heading</h1>
+
+-----------Cascading Style Sheet--------------
+- CSS defined generic rules that can apply to multiple elements 
+
+selector {
+	property: value;
+}
+
+ex:
+
+h1 {
+	color: blue;
+}
+
+-------------Rules Syntax---------------
+- Brackets and semicolons are very important
+- This is where a good editor can make a BIG difference
+
+/* This is how comments in CSS are done */
+
+
+-----------Multiple Properties------------
+
+h1 {
+	color: blue;
+	background-color: yellow;
+}
+
+---------Internal Style Sheet----------
+- Styling is defined within <head>
+- Rules are defined within <style>
+- Styles are applied to all elements in that file
+- Don't forget to close the style tag!
+
+<head>
+	<meta charset="UTF-8">
+	<title>Title here</title>
+	<style>
+	</style>
+</head>
+
+
+----------External Style Sheet-----------
+- You can put rules in an external file (don't use the style tag!)
+- A link to the style sheet is put in the head section
+- Styles are applied to all elements in all files that links to the style sheet
+
+<link rel="stylesheet" href="style.css">
+
+----------The "Cascading" part of CSS------------
+- Browser default
+- External style sheets
+- Internal style (in the head section)
+- Inline style (inside an HTML element)
+
+---------------- Rule precedence---------
+- What if one selector is defined in two external files? The rules from the most recent file have precedence
+- What if one selector has more than one rule in the same file? The MOST RECENT rule has precedence.
+
+----------!important----------
+- It is possible to override later rules, use !important
+
+h1 {
+	color: blue;s
+	font-family: Arial !important;
+}
+
+-----------------REVIEW-----------
+- Why do we want/need to separate content from formatting?
+- How does this also tie in to external/internal style sheets?
+- Understand that this is very powerful. See http://www.csszengarden.com/
