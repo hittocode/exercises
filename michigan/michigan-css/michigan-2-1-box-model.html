@@ -1,1 +1,85 @@
 4:53
+--------------------Height and Width---------------------
+- The default width of inline elements is the content
+- Elements that are not inline can take width and height properties - we saw this in the Display lecture
+
+-----------------Border--------------------
+- Any element can have a border around it
+- border property specifies style, width and color
+- the border style MUST be specified
+
+div {
+	border: solid 1px #CC00AA;
+}
+
+-----------Border-style----------------
+- none, dotted, dashed, solid, double, groove, ridge, inset, outset, hidden
+(most used is solid)
+
+--------------------Border width and color------------------
+- Width: Set in pixels or thin, medium, or large
+- Color: Name - "blue" / RGB - rgb(0,0,255) / hex - #0000FF / transparent
+
+----------------Specifying Individual Sides------------------
+- border-width: 3px; (all around)
+- border-width: 3px 10px; (updown leftright)
+- border-width: 3px 10px 20px; (top leftright bottom)
+- border-width: 3px 10px 20px 1px; (top right bottom left)
+
+-----------------Margin -------------------
+- Margin is additional space outside your border - between the elements and the elements near
+- Positive margin: element moves right/down
+- Negative margin: element moves left/upward
+
+---------------Padding---------------------
+- Padding is additionalspace between the element and its border
+- Positive padding: border moves outward from element
+- Negative padding: border moves over the element
+
+----------------Margin and Padding------------------
+- Neither takes a color (transparent)
+- Can also be defined in 1-4 values like border
+
+-----------------Additive Height and Width----------------
+- margin + border + padding + width = actual width
+
+----------------What is the width and height?---------------- 132x82px (nice)
+div {
+	width: 100px;
+	height: 50px;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid black;
+}
+
+------------------Centering an element---------------------
+- to horizontally center an element use: 
+	- margin: 0 auto;
+- But... 
+	- The element must display: block
+	- The element must not float
+	- The element must not have a fixed or absolute position
+	- The element must have a width that is not auto
+
+--------------box-sizing-----------------
+- box-sizing takes some of the "math" out
+- Options:
+	- content-box: default additive
+	- border-box: width takes content, padding and border into consideration
+
+-------------------Measurements-----------------
+- Absolute - set to a specific size
+	- px, mm, cm, pt...
+
+- Fluid - sets size relative to surrounding elements
+	- %, vw, vh
+	- em (for font): 1em is current size, .75 is 75% of the current size
+	- rem (for font): 1rem is current size of root element
+
+
+-------------------Review--------------
+- Design sketches should be done with box model (margin, border, padding, content) in mind.
+- Use box-model to reduce complexity
+- Margin must always be considered
+
+
