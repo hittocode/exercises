@@ -1,0 +1,29 @@
+header {
+    background-color: #808080;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+h2 {
+    color: #0000ff;
+}
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+section {
+    background-color: #d3d3d3;
+}
+
+link {
+    background-color: #808080;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+img {
+    display: none;
+}
