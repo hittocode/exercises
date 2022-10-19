@@ -10,6 +10,14 @@ header {
     padding: 15px;
 }
 
+header, footer {
+    background: #666666;
+    background: -moz-linear-gradient(blue, yellow);
+    background: -webkit-linear-gradient(blue, yellow);
+    background: -o-linear-gradient(blue, yellow);
+    background: linear-gradient(red, yellow);
+
+}
 h1 {
     color: #FFFFFF;
 }
@@ -20,11 +28,21 @@ nav {
     font-family: Arial, "Times New Roman", serif;
 }
 
-section {
-    width: 30%;
+nav a {
+    width: 22%;
+    display: inline-block;
+    background-color: #ffffff;
+}
+
+.half {
+    width: 45%;
     display: inline-block;
     float: left;
     margin-right: 2%;
+}
+
+.whole {
+    clear: both;
 }
 
 h2 {
@@ -41,7 +59,7 @@ summary {
 }
 
 footer {
-    background: #666666;
+
     clear: both;
    
 }

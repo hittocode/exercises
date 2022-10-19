@@ -1,0 +1,102 @@
+-----------Styling Specific Objects--------------
+- We have focused on type selectors
+- what if you don't want to style all of the links, just some? Or just some of the lists?
+- CSS gives you options
+
+-------------CSS Selectors----------------------
+- Some selectors follow the DOM (Document Object Model)
+- Descendant selectors (nav a)
+	- Style all of the anchor links inside a nav tag
+- Child selectors (nav>a)
+	- More constraining. The anchor elements must be a child of the nav, no intermediate tags, e.g. paragraph
+- Adjacent sibling (hl + ol)
+	- elements must be at same level and follow each other
+
+---------------id Selectors----------------------
+- #id selector
+	- used to identify a single element in the DOM.
+	- was used extensively for <div id="header">, <div id="footer">, etc.
+	- There is a small movement to move the use of id OUT of CSS
+
+<img src="logo.jpg" id="mainLogo" alt="logo"/>
+
+#mainLogo {						
+	border: 5px solid #0006CC;
+	margin: 0 auto;
+}
+
+------------- Class selector--------------
+- class selector
+	- used to identify an element in the DOM that is part of a special class of items
+	- think of thumbnail images, all of the links that are in the navgation, your social media images, etc...
+
+<img src="cat.jpg" class="thumb" alt="Joe"/>
+<img src="dog.jpg" class="thumb" alt="Bacon"/>
+<img src="hamster.jpg" class="thumb" alt="Cheesy"/>
+
+
+.thumb {
+	border: 1px solid #0006CC;
+	width: 20%;
+}
+
+---------classes vs ids------------
+- syntax is "." and "#"
+- classes can be used multiple times
+- id should be unique
+
+- Think of images and navigation bars
+	- format numerous (but not all) images the same way
+	- visually signify the current page
+
+----------narrowing the scope------------
+- as you get more advanced pages, you will want to narrow the scope of the action
+- p.main -> paragraphs using main class
+- header img.special -> paragraphs inside header that use special class
+
+-----------Expanding the scope------------
+- you can combine elements with a comma
+	- p, hl, #main, .special {...rules to apply to all of them}
+
+- Review: What happens when there are multiple rules for the same selector?
+	- When there are conflicts, use the one processed most recently
+	- UNLESS a rule has !important
+
+------------More Attribute Selectors----------------
+- Universal
+	- * applies to every element on the page
+	- Ackk!! Try this!
+- Attribute Selectors
+	- a[href='info.html']
+- Pseudo-Classes
+- Pseudo-Elements
+
+-------------Attribute Selectors----------------
+- You may want to search the DOM for certain elements that have an attribute you are looking for
+	- All the images that use gif files....
+	- All of the images that have empty alt text....
+	- All of the links that go to government sites....
+
+---------Using Operators--------------
+- Operators can be used to find those attribute values you are looking for
+	- ^ : match the beginning exactly
+		a [href^='http://umich']
+	- $ : match the end exactly
+		img[src$ = '.png'] -> apply to .png images
+	- * : wildcard
+		a [href*='umich']
+
+--------------WHEW!!----------------
+- We have actually covered a lot in this short video
+- Know that each of these ideas can merge. One element can have many classes and ids associated with it
+	<li class="special early dark" id="main"/>
+
+- Browser "starts at the top" and applies each rule, sometimes overriding earlier rules
+
+--------------the Good news-----------
+- You can use style sheets from others to style your code, just by adding class!
+- You can override style sheets from others just by rewriting the class, or making your own version of it and linking it at last
+
+--------------Review-------------------
+- Type selectors can be combined to narrow the scope of where rules are applied
+- An id is used to specify a specific element in a page

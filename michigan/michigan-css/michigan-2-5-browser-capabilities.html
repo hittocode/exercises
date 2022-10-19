@@ -1,0 +1,40 @@
+-----------Browsers Differ---------------
+- Even though browsers are moving to a consistent implementation of HTML, they differ in display and aherence
+- It is your responsibility to make sure your page works for a wide audience
+
+------------Handling Stylistic Differences-------------
+- "easiest" way to eliminate browser differences is to use a default style sheet
+- Default style sheets reset all of the values for the page
+- Will make your page look worse!
+
+---------Handling unsupported properties---------------
+- Not all browsers support all HTML5 tags
+- Not all browsers support all CSS3 properties
+- Browser prefixes (or vendor prefixes) provide a quick fix for handling unsupported CSS3 options
+
+---------Browser Prefixes------------------
+- -webkit-:Android, Chrome, iOS, Safari
+- -mox-:Firefox
+- -ms-:Internet Explorer
+- -o-: Opera
+
+----------often unsupported properties------------
+- column-count
+- border-radius
+- gradient
+- sites such as http://caniuse.com/ will tell you when you need to use prefixes
+
+-----------Example--------------
+
+-----------Automated ways to include prefixes-----------
+- For now, add the prefixes by hand
+- there are ways to automate the addition of prefixes 
+	- Editor add-ons (You have most of the control)
+ 	- Use outside programs to dynamically add appropriate prefix based on browser
+
+-----------REVIEW--------------
+- Default style sheets remove stylistic differences
+	- Should default style sheet be internal or external?
+	- Where should it go in relation to other style sheets?
+- Browser prefixes can help remove some differences caused by unsupported options
+	- Shouldn't be overused
