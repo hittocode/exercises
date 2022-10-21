@@ -1,1 +1,29 @@
 6.12
+-------------------Pseudo-classes------------------
+- Elements that are dynamically populated or dependent on tree structure
+- You have seen this before: a:hover{ }
+
+-----------------Types of Pseudo-Classes----------
+- Link - :link, :visited
+- User Action - :hover, :active (pressing), :focus (tabbing)
+- Forms (interfaces)(checkboxes etc) - :enabled, :checked, :disabled
+
+-------------------Types of Pseudo-Classes--------------------
+- Structural / Positional
+	- :first-child, :last-child, :nth-child(), :only-child
+	- :first-of-type, :last-of-type, :only-of-type
+
+li:first-child { }
+li:nth-child(4){ }
+p:empty{ }
+img:only-of-type{ }
+p:last-of-type{ }
+
+-------------types of pseudo-elements---------------
+- textual - :first-letter, :first-line
+- positional/generated - :before, :after
+- fragments - ::selection
+
+---------------REVIEW--------------
+- Pseudo-elements and classes are just one more way to add style to your page
+- I haven't covered every combination so make sure to do some investigation on your own

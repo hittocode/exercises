@@ -1,0 +1,44 @@
+-------------------2D Transform Options-----------------
+- Options
+	- translate
+	- rotate
+	- scale
+	- skew
+	- matrix
+
+-------------Translate------------------
+- transform:translate(x,y);
+	- move x pixels to the left/right and y pixel up/down
+	-ex: transform:translate(100,75);
+
+
+--------------Rotate------------------
+- transform:rotate(XXdeg);
+	- roate/"spin" the element a certain number of degrees
+	-ex: transform:rotate(30deg);
+
+-----------Scale------------
+- transform:scale(width, height);
+	- change the width and height of the element
+	-ex: transform:scale(2,3);
+
+---------------Skew-----------------
+- transform:skew(x-angle, y-angle);
+	- rotate the element a certain number of degrees along the x and y axis
+	- ex: transform:skew(30deg,15deg);
+
+------------------Matrix--------------- (avoid)
+- matrix() - combines all of the 2D transform methods into one
+
+---------------3D Rotate-----------------
+- You can rotate along the x, y, or ze dimension along a given degree
+- transform:rotateY(deg);
+- transform:rotateX(deg);
+- transform:rotateZ(deg);
+- transform:rotate3d(x,y,z)
+
+
+-----------------Review------------------
+- Transforms are one more way to modify the look of your page
+- Often combined with state changes
+- Will typically require browser prefixes
