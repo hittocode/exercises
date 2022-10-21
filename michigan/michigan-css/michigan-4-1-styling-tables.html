@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calendar Table</title>
+
+    </head>
+    <body>
+        <table class="cal">
+            <caption>Oct 2022</caption>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+        </table>
+    </body>
+</html>
+
+<style>
+cal {
+    color: #06425C;
+    border-spacing: 0;
+    border: 3px solid black;
+    -webkit-border-radius: 25px 25px 0 0;
+    border-radius: 0 0 25px 25px;
+}
+
+tr:nth-child(odd) {
+    background: #F2F2F2;
+}
+
+tr:nth-child(even) {
+    background: #CDBB79;
+}
+
+tr:last-child{
+    -webkit-border-radius: 25px 25px 0 0;
+    border-radius: 0 0 25px 25px;
+}
+
+tr:last-child>td:first-child {
+    
+}
+</style>
