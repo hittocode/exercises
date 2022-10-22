@@ -94,48 +94,48 @@ img {
  
 }
 
-
-
-table {
-    font-family: verdana;
-    width: 90%;
-    padding: 20px;
-    line-height: 100%;
-    margin: auto;
-    
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px lightgray;
 }
 
-th {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
-    border-radius: 20px 20px 0 0;
-    border-collapse: separate;
+.content-table tr:hover {
+    color: green;
+}
+.content-table thead tr {
+    background-image: linear-gradient(to right, rgb(116, 9, 204),#09a18d);
     color: white;
-    border-bottom: 5px solid black;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2em;
 
-    
 }
 
-tr {
-    opacity: .8;
-    
-    
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
 }
 
-tr:hover {
-    color: black;
+.content-table tbody tr {
+    border-bottom: 1px solid lightgray;
 }
 
-td {
-    padding: 2px;
-    font-color: blue;
-    background-color: lightgreen;
-    border-radius: 2px;
-    width: 100%;
-    
-    
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
 }
 
-table tbody tr:last-child td:first-child {
-    border-radius: 0 0 0 10px;
-    }
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #09a18d;
+}
+
+/* for this one remember to add the class active-row */
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: white;
+}
+
