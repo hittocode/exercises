@@ -1,4 +1,4 @@
--------------interactivity--------------
+7.20-------------interactivity--------------
 - HTML5 and CSS3 are not really interactive
 - New elements and pseudo-classes can only go so far
 
@@ -22,17 +22,6 @@
 - In JS, an alert is a pop-up window that displays information
 	alert("My Message Here");
 
-------------prompt()-------------
-- very similar to alert, but wants input
-	prompt("Enter your name:");
-
-------------document.write()-------------
-- what if we want something permanent?
-- document.write() writes directly to the page
-	document.write("Time to learn JavaScript");
-
-
-
 <!DOCTYPE html>
 <html>
 <body>
@@ -44,4 +33,61 @@
 </body>
 </html>
 
-7.30
+------------prompt()-------------
+- very similar to alert, but wants input
+	prompt("Enter your name:");
+
+------------document.write()-------------
+- what if we want something permanent?
+- document.write() writes directly to the page
+	document.write("Time to learn JavaScript");
+- Not usually recommended since it can easily be misused
+
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+	document.write("<h1>Hello World</h1>");
+	</script>
+	<noscript>
+</body>
+</html>
+
+-----------------innerHTML-----------------
+- to change the contents of the DOM, use innerHTML combined with the element you want to change
+	element.innerHTML="Time to learn JavaScript";   (no parentheses!)
+- The element will come fromthe API
+
+
+<!DOCTYPE html>
+<html>
+<body>
+	<h1 id="test">Tester</h1>
+<script>
+	document.getElementById('test').innerHTML = "Hello World";
+</script>
+	<p>What happens if you have two elements with id = "test"?</p>
+</body>
+</html>
+
+----------------console.log()-------------
+- This option writes the data to the browser console
+	console.log("Leave a secret message");
+- The console is a place to see what is going on during the execution of your program
+
+------------the console-------------
+- you should be utilizing the console by now
+- does more than take "print" statements, also provides debugging information for JavaScript, HTML and CSS
+
+-----------------Debugging---------------
+- Safari: Preferences -> Advanced, Check the Show development menu in menu box
+- Google Chrome: Developer -> JavaScript Console
+- Firefox: Tools -> Console
+- Edge: F12
+
+------------------Review------------------
+- Right now, we're doing simple things with output
+- As you learn more, the power grows
+
+
+
