@@ -1,0 +1,16 @@
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-list li {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+header {
+    border-width: 5px solid red;
+}
